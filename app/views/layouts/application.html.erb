@@ -36,8 +36,22 @@
 
     <br class="clear" />
 
+    <div class="container">
+      <%= yield %>
+    </div>
 
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <%= link_to "Show me another quote!", "#", class: 'next-quote' %>
+          </div>
+          <div class="col-6 footer-blurb">
+            Proudly hacked in Minneapolis, MN by <a href="http://github.com/kat-gie">Katie Gielen</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <%= yield %>
   </body>
 </html>
